@@ -10,7 +10,7 @@
 
 ## Control Examples
 
-Please refer to [examples](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-5.450/blob/master/Examples.md) to see what each control looks like.
+Please refer to [examples](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-5.470/blob/master/Examples.md) to see what each control looks like.
 
 =======
 
