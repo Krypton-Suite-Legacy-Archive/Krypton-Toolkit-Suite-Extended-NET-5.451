@@ -141,11 +141,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="KryptonToolkitSuite5451">
-      <Version>5.451.1204</Version>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -162,6 +157,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="KryptonToolkitSuite5451">
+      <Version>5.451.1222</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
