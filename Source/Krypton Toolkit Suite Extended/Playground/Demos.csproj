@@ -8,11 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Playground</RootNamespace>
     <AssemblyName>Demos</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <ApplicationVersion>1.0.14.0</ApplicationVersion>
-    <AssemblyVersion>5.470.415.0</AssemblyVersion>
+    <AssemblyVersion>5.451.415.0</AssemblyVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -45,7 +45,7 @@
     <Reference Include="Extended Standard Controls">
       <HintPath>..\Extended Standard Controls\obj\Debug\Extended Standard Controls.dll</HintPath>
     </Reference>
-    <Reference Include="Global Utilities, Version=5.470.507.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Global Utilities, Version=5.451.507.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Global Utilities\bin\Debug\Global Utilities.dll</HintPath>
     </Reference>
@@ -355,8 +355,8 @@
     <PackageReference Include="Cyotek.Windows.Forms.ColorPicker">
       <Version>1.7.2</Version>
     </PackageReference>
-    <PackageReference Include="KryptonToolkitSuite5470">
-      <Version>5.470.1251</Version>
+    <PackageReference Include="KryptonToolkitSuite5451">
+      <Version>5.451.1251</Version>
     </PackageReference>
     <PackageReference Include="WindowsAPICodePack">
       <Version>1.1.0</Version>

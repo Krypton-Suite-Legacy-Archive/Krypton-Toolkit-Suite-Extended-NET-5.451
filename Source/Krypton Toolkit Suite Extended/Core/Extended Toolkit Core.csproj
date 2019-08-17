@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>KryptonToolkitSuiteExtendedCore</RootNamespace>
     <AssemblyName>Krypton Toolkit Suite Extended Core</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
@@ -123,8 +123,8 @@
     <Compile Include="View Draw\ViewDrawCommandLinkButton.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="KryptonToolkitSuite5470">
-      <Version>5.470.1251</Version>
+    <PackageReference Include="KryptonToolkitSuite5451">
+      <Version>5.451.1251</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup />
