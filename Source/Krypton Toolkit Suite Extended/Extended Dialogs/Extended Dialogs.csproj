@@ -85,7 +85,7 @@
       <Version>1.7.2</Version>
     </PackageReference>
     <PackageReference Include="KryptonToolkitSuite5451CoreModule">
-      <Version>5.451.1251</Version>
+      <Version>5.451.1254</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
@@ -109,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\Colour\Palettes\KryptonPaletteColourMixerBasic.resx">
       <DependentUpon>KryptonPaletteColourMixerBasic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Toast\KryptonToastNotificationDialog.resx">
+      <DependentUpon>KryptonToastNotificationDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
