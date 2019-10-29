@@ -51,9 +51,11 @@
     </Compile>
     <Compile Include="Classes\ColourHandler.cs" />
     <Compile Include="Classes\Drawing\DrawingMethods.cs" />
+    <Compile Include="Classes\Drawing\ExtendedDrawing.cs" />
     <Compile Include="Classes\Drawing\FontMetrics.cs" />
     <Compile Include="Classes\Drawing\GraphicsExtension.cs" />
     <Compile Include="Classes\Drawing\RoundedRectangleF.cs" />
+    <Compile Include="Classes\Drawing\Utility.cs" />
     <Compile Include="Classes\KryptonMessageBoxExtended.cs" />
     <Compile Include="Classes\PI.cs" />
     <Compile Include="Classes\Ribbon\RibbonMerger.cs" />
@@ -81,6 +83,9 @@
     <Compile Include="Components\Controls\KryptonKnobControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Components\Controls\KryptonKnobControlEnhanced.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Components\Controls\KryptonListView.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -88,10 +93,10 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Break Out\KryptonTreeViewShell.cs" />
+    <Compile Include="Components\Controls\KryptonPanelExtended.cs" />
     <Compile Include="Components\Controls\KryptonProgressBar.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Components\Controls\KryptonRichTextBoxExtended.cs" />
     <Compile Include="Components\Controls\KryptonSplitButton.cs" />
     <Compile Include="Components\Controls\Rounded Controls\KryptonRoundedButton.cs" />
     <Compile Include="Components\Controls\Rounded Controls\KryptonRoundedMaskedTextBox.cs" />
@@ -142,11 +147,6 @@
     <Compile Include="Values\MainTextValue.cs" />
     <Compile Include="Values\SubscriptTextValue.cs" />
     <Compile Include="View Draw\ViewDrawCommandLinkButton.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="KryptonToolkitSuite5451">
-      <Version>5.451.1252</Version>
-    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
@@ -326,10 +326,18 @@
     <Content Include="ToolboxBitmaps\UACButton.bmp" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Components\Controls\KryptonKnobControlEnhanced.resx">
+      <DependentUpon>KryptonKnobControlEnhanced.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="KryptonToolkitSuite5451">
+      <Version>5.451.1254</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

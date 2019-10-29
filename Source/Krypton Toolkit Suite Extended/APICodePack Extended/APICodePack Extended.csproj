@@ -55,7 +55,7 @@
       <Version>5.451.1254</Version>
     </PackageReference>
     <PackageReference Include="KryptonToolkitSuite5451NavigatorModule">
-      <Version>5.451.761</Version>
+      <Version>5.451.764</Version>
     </PackageReference>
     <PackageReference Include="WindowsAPICodePack">
       <Version>1.1.0</Version>

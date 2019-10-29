@@ -102,10 +102,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="KryptonToolkitSuite5451CoreModule">
-      <Version>5.451.1254</Version>
+      <Version>5.451.1300</Version>
     </PackageReference>
     <PackageReference Include="KryptonToolkitSuite5451NavigatorModule">
-      <Version>5.451.761</Version>
+      <Version>5.451.772</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

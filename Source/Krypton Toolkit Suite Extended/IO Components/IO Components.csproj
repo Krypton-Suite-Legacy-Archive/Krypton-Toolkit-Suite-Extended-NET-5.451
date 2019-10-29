@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\IconExtractor.cs" />
     <Compile Include="Classes\ShellIcon.cs" />
     <Compile Include="Controls\KryptonFileSystemTreeView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,12 +71,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="KryptonToolkitSuite5451CoreModule">
-      <Version>5.451.1254</Version>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Icons\Folder.ico" />
+    <Compile Include="Classes\ShellIconNative.cs" />
     <None Include="Resources\active_search.png" />
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +86,11 @@
     <EmbeddedResource Include="User Controls\KryptonFileSystemUserControl.resx">
       <DependentUpon>KryptonFileSystemUserControl.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="KryptonToolkitSuite5451CoreModule">
+      <Version>5.451.1254</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

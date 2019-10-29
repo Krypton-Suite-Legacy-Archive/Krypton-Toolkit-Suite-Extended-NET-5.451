@@ -7,6 +7,7 @@
  */
 #endregion
 
+ /*
 using Persistence.Properties;
 using EasyScintilla;
 using System;
@@ -65,3 +66,4 @@ namespace Persistence.Classes.Other
         #endregion
     }
 }
+*/

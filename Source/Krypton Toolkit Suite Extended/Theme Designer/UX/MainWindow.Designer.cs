@@ -78,7 +78,7 @@
             this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel2.Location = new System.Drawing.Point(0, 142);
             this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(800, 450);
+            this.kryptonPanel2.Size = new System.Drawing.Size(800, 451);
             this.kryptonPanel2.TabIndex = 2;
             // 
             // MainWindow
