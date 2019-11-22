@@ -8,7 +8,11 @@ namespace ExtendedColourControls.UX
     public class ScreenColourPickerWindow : KryptonForm
     {
         #region Designer Code
+        private ExtendedStandardControls.KryptonPanelExtended kryptonPanelExtended1;
+        private ExtendedStandardControls.KryptonButtonExtended kbtnOk;
+        private System.Windows.Forms.Panel panel1;
         private KryptonSplitContainer kryptonSplitContainer1;
+        private ExtendedStandardControls.KryptonLabelExtended klblHexValue;
         private Cyotek.Windows.Forms.ScreenColorPicker scpColour;
         private KryptonToolkitSuiteExtendedCore.CircularPictureBox cpbSelectedColour;
         private KryptonPanel kryptonPanel1;
@@ -21,17 +25,17 @@ namespace ExtendedColourControls.UX
         private KryptonBlueValueNumericBox knumBlue;
         private KryptonGreenValueNumericBox knumGreen;
         private KryptonRedValueNumericBox knumRed;
-        private KryptonPanel kryptonPanel2;
-        private KryptonLabel klblHexValue;
-        private KryptonButton kbtnOk;
-        private Panel panel1;
-        private KryptonButton kbtnCancel;
+        private ExtendedStandardControls.KryptonButtonExtended kbtnCancel;
 
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ScreenColourPickerWindow));
+            this.kryptonPanelExtended1 = new ExtendedStandardControls.KryptonPanelExtended();
+            this.kbtnOk = new ExtendedStandardControls.KryptonButtonExtended();
+            this.kbtnCancel = new ExtendedStandardControls.KryptonButtonExtended();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.kryptonSplitContainer1 = new ComponentFactory.Krypton.Toolkit.KryptonSplitContainer();
-            this.klblHexValue = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.klblHexValue = new ExtendedStandardControls.KryptonLabelExtended();
             this.scpColour = new Cyotek.Windows.Forms.ScreenColorPicker();
             this.cpbSelectedColour = new KryptonToolkitSuiteExtendedCore.CircularPictureBox();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
@@ -44,10 +48,8 @@ namespace ExtendedColourControls.UX
             this.kryptonGreenValueLabel1 = new ExtendedColourControls.Controls.Labels.KryptonGreenValueLabel();
             this.kknbRed = new KryptonToolkitSuiteExtendedCore.KryptonKnobControl();
             this.kryptonRedValueLabel1 = new ExtendedColourControls.Controls.Labels.KryptonRedValueLabel();
-            this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kbtnOk = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kbtnCancel = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.panel1 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelExtended1)).BeginInit();
+            this.kryptonPanelExtended1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer1.Panel1)).BeginInit();
             this.kryptonSplitContainer1.Panel1.SuspendLayout();
@@ -57,9 +59,175 @@ namespace ExtendedColourControls.UX
             ((System.ComponentModel.ISupportInitialize)(this.cpbSelectedColour)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
-            this.kryptonPanel2.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // kryptonPanelExtended1
+            // 
+            this.kryptonPanelExtended1.Controls.Add(this.kbtnOk);
+            this.kryptonPanelExtended1.Controls.Add(this.kbtnCancel);
+            this.kryptonPanelExtended1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.kryptonPanelExtended1.Image = null;
+            this.kryptonPanelExtended1.Location = new System.Drawing.Point(0, 457);
+            this.kryptonPanelExtended1.Name = "kryptonPanelExtended1";
+            this.kryptonPanelExtended1.Size = new System.Drawing.Size(477, 50);
+            this.kryptonPanelExtended1.StateCommonBackGroundColourOne = System.Drawing.Color.Empty;
+            this.kryptonPanelExtended1.StateCommonBackGroundColourTwo = System.Drawing.Color.Empty;
+            this.kryptonPanelExtended1.StateDisabledBackGroundColourOne = System.Drawing.Color.Empty;
+            this.kryptonPanelExtended1.StateDisabledBackGroundColourTwo = System.Drawing.Color.Empty;
+            this.kryptonPanelExtended1.StateNormalBackGroundColourOne = System.Drawing.Color.Empty;
+            this.kryptonPanelExtended1.StateNormalBackGroundColourTwo = System.Drawing.Color.Empty;
+            this.kryptonPanelExtended1.TabIndex = 2;
+            // 
+            // kbtnOk
+            // 
+            this.kbtnOk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.kbtnOk.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.kbtnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.kbtnOk.Image = null;
+            this.kbtnOk.Location = new System.Drawing.Point(279, 13);
+            this.kbtnOk.LongTextTypeface = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.kbtnOk.Name = "kbtnOk";
+            this.kbtnOk.OverrideDefault.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.kbtnOk.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnOk.OverrideDefaultBackGroundColourOne = System.Drawing.Color.Empty;
+            this.kbtnOk.OverrideDefaultBackGroundColourTwo = System.Drawing.Color.Empty;
+            this.kbtnOk.OverrideDefaultLongTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnOk.OverrideDefaultLongTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnOk.OverrideDefaultShortTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnOk.OverrideDefaultShortTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnOk.OverrideFocus.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.kbtnOk.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnOk.OverrideFocusBackGroundColourOne = System.Drawing.Color.Empty;
+            this.kbtnOk.OverrideFocusBackGroundColourTwo = System.Drawing.Color.Empty;
+            this.kbtnOk.OverrideFocusLongTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnOk.OverrideFocusLongTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnOk.OverrideFocusShortTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnOk.OverrideFocusShortTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnOk.ShortTextTypeface = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnOk.Size = new System.Drawing.Size(90, 25);
+            this.kbtnOk.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.kbtnOk.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnOk.StateCommonBackGroundColourOne = System.Drawing.Color.Empty;
+            this.kbtnOk.StateCommonBackGroundColourTwo = System.Drawing.Color.Empty;
+            this.kbtnOk.StateCommonLongTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnOk.StateCommonLongTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnOk.StateCommonShortTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnOk.StateCommonShortTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnOk.StateDisabled.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.kbtnOk.StateDisabled.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnOk.StateDisabledBackGroundColourOne = System.Drawing.Color.Empty;
+            this.kbtnOk.StateDisabledBackGroundColourTwo = System.Drawing.Color.Empty;
+            this.kbtnOk.StateDisabledLongTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnOk.StateDisabledLongTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnOk.StateDisabledShortTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnOk.StateDisabledShortTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnOk.StateNormal.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.kbtnOk.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnOk.StateNormalBackGroundColourOne = System.Drawing.Color.Empty;
+            this.kbtnOk.StateNormalBackGroundColourTwo = System.Drawing.Color.Empty;
+            this.kbtnOk.StateNormalLongTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnOk.StateNormalLongTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnOk.StateNormalShortTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnOk.StateNormalShortTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnOk.StatePressed.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.kbtnOk.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnOk.StatePressedBackGroundColourOne = System.Drawing.Color.Empty;
+            this.kbtnOk.StatePressedBackGroundColourTwo = System.Drawing.Color.Empty;
+            this.kbtnOk.StatePressedLongTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnOk.StatePressedLongTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnOk.StatePressedShortTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnOk.StatePressedShortTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnOk.StateTracking.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.kbtnOk.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnOk.StateTrackingBackGroundColourOne = System.Drawing.Color.Empty;
+            this.kbtnOk.StateTrackingBackGroundColourTwo = System.Drawing.Color.Empty;
+            this.kbtnOk.StateTrackingLongTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnOk.StateTrackingLongTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnOk.StateTrackingShortTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnOk.StateTrackingShortTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnOk.TabIndex = 1;
+            this.kbtnOk.Values.Text = "&Ok";
+            this.kbtnOk.Click += new System.EventHandler(this.kbtnOk_Click);
+            // 
+            // kbtnCancel
+            // 
+            this.kbtnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.kbtnCancel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.kbtnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.kbtnCancel.Image = null;
+            this.kbtnCancel.Location = new System.Drawing.Point(375, 13);
+            this.kbtnCancel.LongTextTypeface = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.kbtnCancel.Name = "kbtnCancel";
+            this.kbtnCancel.OverrideDefault.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.kbtnCancel.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnCancel.OverrideDefaultBackGroundColourOne = System.Drawing.Color.Empty;
+            this.kbtnCancel.OverrideDefaultBackGroundColourTwo = System.Drawing.Color.Empty;
+            this.kbtnCancel.OverrideDefaultLongTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnCancel.OverrideDefaultLongTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnCancel.OverrideDefaultShortTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnCancel.OverrideDefaultShortTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnCancel.OverrideFocus.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.kbtnCancel.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnCancel.OverrideFocusBackGroundColourOne = System.Drawing.Color.Empty;
+            this.kbtnCancel.OverrideFocusBackGroundColourTwo = System.Drawing.Color.Empty;
+            this.kbtnCancel.OverrideFocusLongTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnCancel.OverrideFocusLongTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnCancel.OverrideFocusShortTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnCancel.OverrideFocusShortTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnCancel.ShortTextTypeface = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnCancel.Size = new System.Drawing.Size(90, 25);
+            this.kbtnCancel.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.kbtnCancel.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnCancel.StateCommonBackGroundColourOne = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateCommonBackGroundColourTwo = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateCommonLongTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateCommonLongTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateCommonShortTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateCommonShortTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateDisabled.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.kbtnCancel.StateDisabled.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnCancel.StateDisabledBackGroundColourOne = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateDisabledBackGroundColourTwo = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateDisabledLongTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateDisabledLongTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateDisabledShortTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateDisabledShortTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateNormal.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.kbtnCancel.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnCancel.StateNormalBackGroundColourOne = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateNormalBackGroundColourTwo = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateNormalLongTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateNormalLongTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateNormalShortTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateNormalShortTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnCancel.StatePressed.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.kbtnCancel.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnCancel.StatePressedBackGroundColourOne = System.Drawing.Color.Empty;
+            this.kbtnCancel.StatePressedBackGroundColourTwo = System.Drawing.Color.Empty;
+            this.kbtnCancel.StatePressedLongTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnCancel.StatePressedLongTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnCancel.StatePressedShortTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnCancel.StatePressedShortTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateTracking.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.kbtnCancel.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnCancel.StateTrackingBackGroundColourOne = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateTrackingBackGroundColourTwo = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateTrackingLongTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateTrackingLongTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateTrackingShortTextColourOne = System.Drawing.Color.Empty;
+            this.kbtnCancel.StateTrackingShortTextColourTwo = System.Drawing.Color.Empty;
+            this.kbtnCancel.TabIndex = 0;
+            this.kbtnCancel.Values.Text = "C&ancel";
+            this.kbtnCancel.Click += new System.EventHandler(this.kbtnCancel_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 454);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(477, 3);
+            this.panel1.TabIndex = 3;
             // 
             // kryptonSplitContainer1
             // 
@@ -77,18 +245,29 @@ namespace ExtendedColourControls.UX
             // kryptonSplitContainer1.Panel2
             // 
             this.kryptonSplitContainer1.Panel2.Controls.Add(this.kryptonPanel1);
-            this.kryptonSplitContainer1.Size = new System.Drawing.Size(477, 507);
+            this.kryptonSplitContainer1.Size = new System.Drawing.Size(477, 454);
             this.kryptonSplitContainer1.SplitterDistance = 172;
             this.kryptonSplitContainer1.TabIndex = 4;
             // 
             // klblHexValue
             // 
-            this.klblHexValue.Location = new System.Drawing.Point(18, 282);
+            this.klblHexValue.Image = null;
+            this.klblHexValue.Location = new System.Drawing.Point(18, 272);
+            this.klblHexValue.LongTextTypeface = null;
             this.klblHexValue.Name = "klblHexValue";
-            this.klblHexValue.Size = new System.Drawing.Size(6, 2);
+            this.klblHexValue.ShortTextTypeface = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.klblHexValue.Size = new System.Drawing.Size(78, 26);
             this.klblHexValue.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.klblHexValue.StateCommonTextColourOne = System.Drawing.Color.Empty;
+            this.klblHexValue.StateCommonTextColourTwo = System.Drawing.Color.Empty;
+            this.klblHexValue.StateDisabled.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.klblHexValue.StateDisabledTextColourOne = System.Drawing.Color.Empty;
+            this.klblHexValue.StateDisabledTextColourTwo = System.Drawing.Color.Empty;
+            this.klblHexValue.StateNormal.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.klblHexValue.StateNormalTextColourOne = System.Drawing.Color.Empty;
+            this.klblHexValue.StateNormalTextColourTwo = System.Drawing.Color.Empty;
             this.klblHexValue.TabIndex = 1;
-            this.klblHexValue.Values.Text = "";
+            this.klblHexValue.Values.Text = "#000000";
             // 
             // scpColour
             // 
@@ -126,7 +305,7 @@ namespace ExtendedColourControls.UX
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(300, 507);
+            this.kryptonPanel1.Size = new System.Drawing.Size(300, 454);
             this.kryptonPanel1.TabIndex = 0;
             // 
             // knumBlue
@@ -182,7 +361,7 @@ namespace ExtendedColourControls.UX
             // 
             // kryptonBlueValueLabel1
             // 
-            this.kryptonBlueValueLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.kryptonBlueValueLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonBlueValueLabel1.Location = new System.Drawing.Point(42, 366);
             this.kryptonBlueValueLabel1.Name = "kryptonBlueValueLabel1";
@@ -240,7 +419,7 @@ namespace ExtendedColourControls.UX
             // 
             // kryptonGreenValueLabel1
             // 
-            this.kryptonGreenValueLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.kryptonGreenValueLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonGreenValueLabel1.Location = new System.Drawing.Point(30, 211);
             this.kryptonGreenValueLabel1.Name = "kryptonGreenValueLabel1";
@@ -278,7 +457,7 @@ namespace ExtendedColourControls.UX
             // 
             // kryptonRedValueLabel1
             // 
-            this.kryptonRedValueLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.kryptonRedValueLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonRedValueLabel1.Location = new System.Drawing.Point(46, 62);
             this.kryptonRedValueLabel1.Name = "kryptonRedValueLabel1";
@@ -294,57 +473,20 @@ namespace ExtendedColourControls.UX
             this.kryptonRedValueLabel1.TextSize = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.kryptonRedValueLabel1.Values.Text = "Red";
             // 
-            // kryptonPanel2
-            // 
-            this.kryptonPanel2.Controls.Add(this.kbtnOk);
-            this.kryptonPanel2.Controls.Add(this.kbtnCancel);
-            this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonPanel2.Location = new System.Drawing.Point(0, 456);
-            this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(477, 51);
-            this.kryptonPanel2.TabIndex = 5;
-            // 
-            // kbtnOk
-            // 
-            this.kbtnOk.Location = new System.Drawing.Point(279, 14);
-            this.kbtnOk.Name = "kbtnOk";
-            this.kbtnOk.Size = new System.Drawing.Size(90, 25);
-            this.kbtnOk.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kbtnOk.TabIndex = 1;
-            this.kbtnOk.Values.Text = "O&k";
-            this.kbtnOk.Click += new System.EventHandler(this.kbtnOk_Click);
-            // 
-            // kbtnCancel
-            // 
-            this.kbtnCancel.Location = new System.Drawing.Point(375, 14);
-            this.kbtnCancel.Name = "kbtnCancel";
-            this.kbtnCancel.Size = new System.Drawing.Size(90, 25);
-            this.kbtnCancel.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kbtnCancel.TabIndex = 0;
-            this.kbtnCancel.Values.Text = "&Cancel";
-            this.kbtnCancel.Click += new System.EventHandler(this.kbtnCancel_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 453);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(477, 3);
-            this.panel1.TabIndex = 6;
-            // 
             // ScreenColourPickerWindow
             // 
             this.ClientSize = new System.Drawing.Size(477, 507);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.kryptonPanel2);
             this.Controls.Add(this.kryptonSplitContainer1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.kryptonPanelExtended1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ScreenColourPickerWindow";
             this.Text = "Screen Colour Picker";
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelExtended1)).EndInit();
+            this.kryptonPanelExtended1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer1.Panel1)).EndInit();
             this.kryptonSplitContainer1.Panel1.ResumeLayout(false);
             this.kryptonSplitContainer1.Panel1.PerformLayout();
@@ -356,8 +498,6 @@ namespace ExtendedColourControls.UX
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
-            this.kryptonPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -430,7 +570,7 @@ namespace ExtendedColourControls.UX
 
             knumBlue.Value = kknbBlue.Value;
 
-           klblHexValue.Text = string.Empty;
+            klblHexValue.Text = string.Empty;
 
             cpbSelectedColour.BackColor = Color.Transparent;
         }

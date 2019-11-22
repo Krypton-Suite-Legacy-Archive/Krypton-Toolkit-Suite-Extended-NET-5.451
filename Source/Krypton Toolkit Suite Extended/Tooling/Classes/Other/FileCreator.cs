@@ -7,7 +7,6 @@
  */
 #endregion
 
- /**
 using Core.Properties;
 using EasyScintilla;
 using System;
@@ -15,7 +14,6 @@ using System.IO;
 
 namespace Core.Classes.Other
 {
-
     public class FileCreator
     {
         #region Variables
@@ -67,4 +65,3 @@ namespace Core.Classes.Other
         #endregion
     }
 }
-    **/

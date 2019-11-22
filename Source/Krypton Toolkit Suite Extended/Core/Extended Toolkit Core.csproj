@@ -97,6 +97,7 @@
     <Compile Include="Components\Controls\KryptonProgressBar.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Components\Controls\KryptonRichTextBoxExtended.cs" />
     <Compile Include="Components\Controls\KryptonSplitButton.cs" />
     <Compile Include="Components\Controls\Rounded Controls\KryptonRoundedButton.cs" />
     <Compile Include="Components\Controls\Rounded Controls\KryptonRoundedMaskedTextBox.cs" />
@@ -147,6 +148,11 @@
     <Compile Include="Values\MainTextValue.cs" />
     <Compile Include="Values\SubscriptTextValue.cs" />
     <Compile Include="View Draw\ViewDrawCommandLinkButton.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="KryptonToolkitSuite5451">
+      <Version>5.451.1300</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
@@ -333,11 +339,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="KryptonToolkitSuite5451">
-      <Version>5.451.1254</Version>
-    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

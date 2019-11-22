@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{95AC451D-BEBB-464B-9C1D-C25F49D904EA}</ProjectGuid>
+    <ProjectGuid>{95AC450D-BEBB-464B-9C1D-C25F49D904EA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>ThemeDesigner</RootNamespace>
     <AssemblyName>Theme Designer</AssemblyName>

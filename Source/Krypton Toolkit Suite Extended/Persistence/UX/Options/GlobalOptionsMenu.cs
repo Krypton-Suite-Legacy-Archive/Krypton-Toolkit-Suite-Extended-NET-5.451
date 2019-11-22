@@ -330,7 +330,7 @@ namespace Persistence.UX.Options
             this.kryptonPage4,
             this.kryptonPage5});
             this.kryptonDockableNavigator1.SelectedIndex = 0;
-            this.kryptonDockableNavigator1.Size = new System.Drawing.Size(627, 451);
+            this.kryptonDockableNavigator1.Size = new System.Drawing.Size(627, 450);
             this.kryptonDockableNavigator1.TabIndex = 36;
             this.kryptonDockableNavigator1.Text = "kryptonDockableNavigator1";
             // 

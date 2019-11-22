@@ -108,8 +108,8 @@
     <PackageReference Include="Cyotek.Windows.Forms.ColorPicker">
       <Version>1.7.2</Version>
     </PackageReference>
-    <PackageReference Include="KryptonToolkitSuite5451">
-      <Version>5.451.1254</Version>
+    <PackageReference Include="KryptonToolkitSuite5451CoreModule">
+      <Version>5.451.1300</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
@@ -199,7 +199,7 @@
       <Name>Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\Extended Colour Controls\Extended Colour Controls.csproj">
-      <Project>{a2f6a6c7-a8a9-4519-93e0-edf09b6a03a7}</Project>
+      <Project>{a2f6a6c7-a8a9-4509-93e0-edf09b6a03a7}</Project>
       <Name>Extended Colour Controls</Name>
     </ProjectReference>
     <ProjectReference Include="..\Toolkit Settings\Toolkit Settings.csproj">

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A2F6A6C7-A8A9-4519-93E0-EDF09B6A03A7}</ProjectGuid>
+    <ProjectGuid>{A2F6A6C7-A8A9-4509-93E0-EDF09B6A03A7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ExtendedColourControls</RootNamespace>
