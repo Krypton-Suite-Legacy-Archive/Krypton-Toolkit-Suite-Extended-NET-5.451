@@ -18,6 +18,7 @@ using System.Runtime.InteropServices;
 
 namespace ExtendedControls.ExtendedToolkit.Controls
 {
+    /*
     /// <summary>
     /// A <see cref="KryptonRichTextBox"/> control with some extra features.
     /// </summary>
@@ -327,4 +328,5 @@ namespace ExtendedControls.ExtendedToolkit.Controls
         }
         #endregion
     }
+    */
 }

@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>ItemTemplates</RootNamespace>
     <AssemblyName>Item Templates</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <ApplicationVersion>1.0.5.0</ApplicationVersion>
@@ -79,8 +79,11 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="KryptonToolkitSuite5451">
-      <Version>5.451.1300</Version>
+      <Version>5.451.2098</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(TargetDir)*.*" "$(ProjectDir)..\..\..\..\Bin\Applications\Item Templates\" /D /R /Y /S</PostBuildEvent>
+  </PropertyGroup>
 </Project>

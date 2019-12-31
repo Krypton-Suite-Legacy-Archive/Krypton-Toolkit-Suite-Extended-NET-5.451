@@ -2,7 +2,7 @@
 /*
  * Use of this source code is governed by a BSD-style
  * license that can be found in the LICENSE.md file or at
- * https://github.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-5.451/blob/master/LICENSE
+ * https://github.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-5.480/blob/master/LICENSE
  *
  */
 #endregion
@@ -17,6 +17,7 @@ using System.Runtime.InteropServices;
 
 namespace KryptonToolkitSuiteExtendedCore
 {
+    /*
     /// <summary>
     /// A <see cref="KryptonRichTextBox"/> control with some extra features.
     /// </summary>
@@ -335,4 +336,5 @@ namespace KryptonToolkitSuiteExtendedCore
         }
         #endregion
     }
+    */
 }
