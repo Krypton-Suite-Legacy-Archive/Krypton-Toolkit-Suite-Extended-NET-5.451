@@ -18,7 +18,7 @@ namespace Core.UX
     public partial class PaletteFileEditor : KryptonForm
     {
         #region Variables
-        //private FileCreator _fileCreator = new FileCreator();
+        private FileCreator _fileCreator = new FileCreator();
         #endregion
 
         public PaletteFileEditor()
@@ -36,7 +36,7 @@ namespace Core.UX
 
                 string fileContents = reader.ReadToEnd();
 
-                //filePane.Text = fileContents;
+                filePane.Text = fileContents;
             }
             catch (Exception error)
             {
@@ -46,7 +46,7 @@ namespace Core.UX
 
         private void kbtnGenerateNewFile_Click(object sender, EventArgs e)
         {
-            //_fileCreator.GenerateNewFile(filePane);
+            _fileCreator.GenerateNewFile(filePane);
         }
 
         private void PaletteFileEditor_Load(object sender, EventArgs e)

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1B480AF7-AC66-4BF6-9F75-294A7D1A9DDB}</ProjectGuid>
+    <ProjectGuid>{1B451AF7-AC66-4BF6-9F75-294A7D1A9DDB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TaskDialogs</RootNamespace>
@@ -82,11 +82,14 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="KryptonToolkitSuite5451">
-      <Version>5.451.1300</Version>
+      <Version>5.451.2098</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.manifest" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(TargetDir)*.*" "$(ProjectDir)..\..\..\..\Bin\Individual Components\Task Dialogs\" /D /R /Y /S</PostBuildEvent>
+  </PropertyGroup>
 </Project>

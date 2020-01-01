@@ -35,7 +35,7 @@
             this.kbtnOpenFile = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kbtnGenerateNewFile = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            //this.filePane = new EasyScintilla.SimpleEditor();
+            this.filePane = new EasyScintilla.SimpleEditor();
             //this.acmPalette = new AutocompleteMenuNS.AutocompleteMenu();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
@@ -98,7 +98,7 @@
             // 
             // kryptonPanel2
             // 
-            //this.kryptonPanel2.Controls.Add(this.filePane);
+            this.kryptonPanel2.Controls.Add(this.filePane);
             this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel2.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel2.Name = "kryptonPanel2";
@@ -107,17 +107,17 @@
             // 
             // filePane
             // 
-            ////this.filePane.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            ////| System.Windows.Forms.AnchorStyles.Left) 
-            ////| System.Windows.Forms.AnchorStyles.Right)));
-            ////this.filePane.FontQuality = ScintillaNET.FontQuality.AntiAliased;
-            ////this.filePane.IndentationGuides = ScintillaNET.IndentView.LookBoth;
-            ////this.filePane.Lexer = ScintillaNET.Lexer.Xml;
-            ////this.filePane.Location = new System.Drawing.Point(12, 12);
-            ////this.filePane.Name = "filePane";
-            ////this.filePane.Size = new System.Drawing.Size(924, 695);
-            ////this.filePane.Styler = null;
-            ////this.filePane.TabIndex = 0;
+            this.filePane.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.filePane.FontQuality = ScintillaNET.FontQuality.AntiAliased;
+            this.filePane.IndentationGuides = ScintillaNET.IndentView.LookBoth;
+            this.filePane.Lexer = ScintillaNET.Lexer.Xml;
+            this.filePane.Location = new System.Drawing.Point(12, 12);
+            this.filePane.Name = "filePane";
+            this.filePane.Size = new System.Drawing.Size(924, 695);
+            this.filePane.Styler = null;
+            this.filePane.TabIndex = 0;
             // 
             // acmPalette
             // 
@@ -154,7 +154,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kbtnGenerateNewFile;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel2;
-        //private EasyScintilla.SimpleEditor filePane;
+        private EasyScintilla.SimpleEditor filePane;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kbtnGenerateColours;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kbtnSaveFile;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kbtnOpenFile;

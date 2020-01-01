@@ -121,8 +121,11 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="KryptonToolkitSuite5451">
-      <Version>5.451.1300</Version>
+      <Version>5.451.2098</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(TargetDir)*.*" "$(ProjectDir)..\..\..\..\Bin\Applications\Colour Creator\" /D /R /Y /S</PostBuildEvent>
+  </PropertyGroup>
 </Project>

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C0A19DFB-B380-4805-BCF0-7C5639E3553F}</ProjectGuid>
+    <ProjectGuid>{C0A19DFB-B380-4515-BCF0-7C5639E3553F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>PaletteController</RootNamespace>
     <AssemblyName>Palette Controller</AssemblyName>
@@ -46,4 +46,7 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(TargetDir)*.*" "$(ProjectDir)..\..\..\..\Bin\Shared\Palette Controller\" /D /R /Y /S</PostBuildEvent>
+  </PropertyGroup>
 </Project>

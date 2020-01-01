@@ -245,19 +245,19 @@
       <Version>1.0.5</Version>
     </PackageReference>
     <PackageReference Include="KryptonToolkitSuite5451CoreModule">
-      <Version>5.451.1300</Version>
+      <Version>5.451.2098</Version>
     </PackageReference>
     <PackageReference Include="KryptonToolkitSuite5451DockingModule">
-      <Version>5.451.745</Version>
+      <Version>5.451.753</Version>
     </PackageReference>
     <PackageReference Include="KryptonToolkitSuite5451NavigatorModule">
-      <Version>5.451.774</Version>
+      <Version>5.451.796</Version>
     </PackageReference>
     <PackageReference Include="KryptonToolkitSuite5451RibbonModule">
-      <Version>5.451.828</Version>
+      <Version>5.451.850</Version>
     </PackageReference>
     <PackageReference Include="KryptonToolkitSuite5451WorkspaceModule">
-      <Version>5.451.719</Version>
+      <Version>5.451.727</Version>
     </PackageReference>
     <PackageReference Include="snt.ScintillaNet.FindReplaceDialog">
       <Version>1.4.0</Version>
@@ -399,4 +399,7 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(TargetDir)*.*" "$(ProjectDir)..\..\..\..\Bin\Shared\Persistence\" /D /R /Y /S</PostBuildEvent>
+  </PropertyGroup>
 </Project>

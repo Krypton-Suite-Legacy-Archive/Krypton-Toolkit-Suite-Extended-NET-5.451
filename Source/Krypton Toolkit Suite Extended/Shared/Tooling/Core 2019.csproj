@@ -363,8 +363,11 @@
     <None Include="Resources\10-large-opt.png" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="EasyScintilla">
+      <Version>1.0.5</Version>
+    </PackageReference>
     <PackageReference Include="KryptonToolkitSuite5451">
-      <Version>5.451.1300</Version>
+      <Version>5.451.2098</Version>
     </PackageReference>
     <PackageReference Include="snt.ScintillaNet.FindReplaceDialog">
       <Version>1.4.0</Version>
@@ -395,4 +398,7 @@
     <None Include="Resources\Warning_32_x_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(TargetDir)*.*" "$(ProjectDir)..\..\..\..\Bin\Shared\Core\" /D /R /Y /S</PostBuildEvent>
+  </PropertyGroup>
 </Project>
